@@ -1,0 +1,20 @@
+function signal_features = characterize_signal(X,t)
+
+%here X can be a multi-channel
+response = stepinfo(X,t);
+
+for i=1:size(X,2)
+
+    [pks,locs,widths,proms] = findpeaks(X(:,i),t);
+    response(i).pks = pks;
+    response(i).locs = locs;
+    response(i).widths = widths;
+    response(i).proms = proms;
+    [a,b = 
+    response(i).OS_calc = max(X(:,i)) - X(end,i);
+    response(i).US_calc = min(X(:,i)) - X(end,i);
+end
+
+signal_features = response;
+
+end
