@@ -1,4 +1,4 @@
-#GSC Feedback loops
+# GSC Feedback loops
 
 This is a repository for the manuscript:
 Elucidating the role of multiple feedback loops in regulating stem cell decisions
